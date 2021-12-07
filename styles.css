@@ -6,6 +6,15 @@ body {
 .container {
     background: #FFF;
     border-radius: 10px;
+    position: relative;
+}
+
+#yonipic {
+    position: absolute;
+    right: 21px;
+    top: 4px;
+    height: 60px;
+    width: 53px;
 }
 
 #easteregg-with-the-number {
