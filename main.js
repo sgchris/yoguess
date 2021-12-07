@@ -102,8 +102,10 @@
             alert("УГАДАЛ!!!");
             window.location.reload();
         } else {
-            $("#past-numbers table tbody").append(
+            $("#past-numbers table tbody").prepend(
                 $("<tr></tr>")
+                    .css("background-color", "#8BE")
+                    .animate({backgroundColor: "#FFF"}, 1000)
                     .append(
                         $("<td></td>").append(
                             $("<div class='submitted-numbers-wrapper'></div>").html($("#chosen-numbers-wrapper").html())
