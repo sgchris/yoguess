@@ -63,3 +63,20 @@ body {
     line-height: 48px;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    #yonipic {
+        display: none;
+    }
+
+    h1 {
+        padding-top: 10px;
+    }
+    
+    .submitted-numbers-wrapper .selected-number {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        margin: 3px;
+    }
+}
