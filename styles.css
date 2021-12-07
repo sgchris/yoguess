@@ -1,0 +1,56 @@
+body {
+    background: #68a;
+    padding-top: 10px;
+}
+
+.container {
+    background: #FFF;
+    border-radius: 10px;
+}
+
+#easteregg-with-the-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#numbers-to-choose td {
+    text-align: center;
+}
+#numbers-to-choose td:hover {
+    background-color: #DDD;
+    cursor: pointer;
+}
+#numbers-to-choose td.selected {
+    background-color: #369;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#chosen-numbers-wrapper {
+    min-height: 50px;
+}
+
+#error-message {
+    min-height: 25px;
+}
+
+.selected-number {
+    border: 1px solid #AAA;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+    font-weight: normal;
+}
+
+#past-numbers td {
+    line-height: 48px;
+    font-weight: bold;
+}

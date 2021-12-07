@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>YoGuess</title>
+
+    <script>
+        window.NUMBER_OF_DIGITS = 3;
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Угадай 
+            <script>document.write(window.NUMBER_OF_DIGITS);</script>-ёх значное число
+        </h1>
+        <hr />
+        <br>
+        <div id="input-new-number-wrapper" class="row">
+            <div class="col-sm-12 col-lg-4">
+                <h4>Выбери 
+                    <script>document.write(window.NUMBER_OF_DIGITS);</script> цифры
+                </h4>
+                <table id="numbers-to-choose" class="table table-bordered">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <div id="chosen-numbers-wrapper"></div>
+                <br>
+                <div id="submit-number-wrapper">
+                    <button type="button" id="check" class="btn btn-primary" disabled>Проверить</button>
+                    <button type="button" id="clear" class="btn btn-outline">Очистить</button>
+                </div>
+                <div id="error-message" class="text-danger"></div>
+            </div>
+            <div id="past-numbers" class="col-sm-12 col-lg-6 offset-lg-2">
+                <table class="table table-stripped">
+                    <thead>
+                        <tr>
+                            <th>Проверенные числа</th>
+                            <th>Присутствует</th>
+                            <th>На своём месте</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="main.js"></script>
+</body>
+
+</html>
