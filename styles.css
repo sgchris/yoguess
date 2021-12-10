@@ -3,6 +3,45 @@ body {
     padding-top: 10px;
 }
 
+#bubble {
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 10%;
+    z-index: 5;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px #333;
+    height: 650px;
+    width: 400px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 5em;
+    
+    border-radius: 10px;
+    background-color: #CDE;
+}
+
+@keyframes spin { 
+    50% { 
+        transform:rotate(180deg); 
+        width: 100px;
+        left: 48%;
+        top: 28%
+    } 
+    100% { 
+        transform:rotate(360deg); 
+        width: 400px;
+    } 
+}
+
+#yoni-jumping {
+    width: 400px;
+    position: absolute;
+    left: 42%;
+    z-index: 10;
+    top: 15%;
+    animation:spin 4s linear infinite;
+}
+
 .container {
     background: #FFF;
     border-radius: 10px;
@@ -65,6 +104,42 @@ body {
 }
 
 @media (max-width: 600px) {
+    
+    #bubble {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        border: 1px solid #333;
+        border-radius: initial;
+        height: initial;
+        width: initial;
+        line-height: 100px;
+        text-align: center;
+        font-size: 5em;
+    }
+    
+    @keyframes spin { 
+        50% { 
+            transform:rotate(180deg); 
+            width: 100px;
+            left: 38%;
+            top: 28%
+        } 
+        100% { 
+            transform:rotate(360deg); 
+            width: 300px;
+        } 
+    }
+
+    #yoni-jumping {
+        width: 300px;
+        left: 10%;
+        z-index: 10;
+    }
+
     #yonipic {
         display: none;
     }

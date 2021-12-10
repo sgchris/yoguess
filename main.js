@@ -99,8 +99,8 @@
         });
 
         if (exactMatches == window.NUMBER_OF_DIGITS) {
-            alert("УГАДАЛ!!!");
-            window.location.reload();
+            $("#bubble, #yoni-jumping").show();
+            //window.location.reload();
         } else {
             $("#past-numbers table tbody").prepend(
                 $("<tr></tr>")
@@ -125,6 +125,10 @@
         $("#numbers-to-choose td").removeClass("selected");
 
         EnableDisableButtons();
+    });
+
+    $("#start-new-game-button").click(function() {
+        document.location.reload();
     });
 
 })();
